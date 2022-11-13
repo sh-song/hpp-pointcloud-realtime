@@ -19,9 +19,9 @@ if __name__ == "__main__":
         #----YOUR CODE HERE-----#
 
 
-        print(type(pc_array))
-        print(pc_array.shape)
-        print(pc_array[-1, :])
+        print(f"\ntype: {type(pc_array)}")
+        print(f"shape: {pc_array.shape}")
+        print(f"last point: {pc_array[-1, :]}")
 
 
         #-----------------------#
