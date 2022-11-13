@@ -32,9 +32,7 @@ RUN pip3 install \
     snakeviz \
     line_profiler \
     psutil \
-    memory_profiler \
-    py-spy
-
+    memory_profiler
 
 #ROS
 RUN apt install -y \
