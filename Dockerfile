@@ -26,7 +26,6 @@ RUN pip3 install numpy
 
 RUN pip3 install \
     Pillow \
-    scipy \
     matplotlib
 
 RUN pip3 install \
