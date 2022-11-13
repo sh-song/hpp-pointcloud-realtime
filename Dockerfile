@@ -19,6 +19,7 @@ RUN apt install -y \
     libfreetype6-dev \
     libjpeg-dev \
     zlib1g-dev
+
 #Python
 RUN pip3 install numpy
 
@@ -45,15 +46,6 @@ RUN apt install -y \
 	libeigen3-dev \
 	libjsoncpp-dev
 
-RUN apt install -y \
-	ros-melodic-pcl-ros \
-	ros-melodic-rviz \
-	ros-melodic-tf2-geometry-msgs \
-	ros-melodic-cv-bridge \
-	ros-melodic-angles
-
-
-
 #ROS python
 RUN \
 	apt install -y python3-pip && \
@@ -63,5 +55,3 @@ RUN pip3 install rospkg
 
 RUN mkdir -p /workspace
 WORKDIR /workspace
-
-
