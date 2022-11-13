@@ -21,6 +21,7 @@ RUN apt install -y \
     zlib1g-dev
 
 #Python
+RUN pip3 install Cython
 RUN pip3 install numpy
 
 RUN pip3 install \
@@ -33,8 +34,7 @@ RUN pip3 install \
     line_profiler \
     psutil \
     memory_profiler \
-    py-spy \
-    Cython
+    py-spy
 
 
 #ROS
