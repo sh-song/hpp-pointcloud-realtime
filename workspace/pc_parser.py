@@ -28,7 +28,7 @@ class PCParser:
         131072 points = 128(height) * 1024(width)
         """
         length = len(msg.data) * self.BYTE_TO_POINT #131072
-        point_list = [None] * int(length)
+        point_list = [[0.0]*4] * int(length)
 
         for i, p in enumerate(pc2.read_points(msg)):
             point_list[i] = p[:4]
